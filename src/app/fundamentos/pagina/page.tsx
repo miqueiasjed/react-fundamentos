@@ -7,7 +7,7 @@ export default function Page() {
     <div className={`
       flex flex-col gap-4 p-4
     `}>
-      <Cabecalho/>
+      <Cabecalho titulo='Minha Aplicação' subtitulo = 'Melhor Aplicação WEB'/>
       <Conteudo/>
       <Rodape/>
     </div>
