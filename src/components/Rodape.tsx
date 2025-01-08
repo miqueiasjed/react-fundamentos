@@ -1,11 +1,12 @@
-export default function Rodape() {
+export default function Rodape(props: any) {
   return (
     <div className={`
-    flex justify-center items-center
-    h-36 rounded-lg text-3xl
+    flex justify-between items-center
+    h-36 rounded-lg text-3xl px-10
     bg-cyan-600
     `}>
-      Rodapé
+        <span>{props.textoEsquerdo}</span>
+        <span>{props.textoDireito}</span>
     </div>
   )
 }
