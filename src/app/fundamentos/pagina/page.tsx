@@ -10,7 +10,11 @@ export default function Page() {
       <Cabecalho titulo='Minha Aplicação' subtitulo = 'Melhor Aplicação WEB'/>
      
       <Conteudo>
-        <button className="bg-blue-500 p-2 rounded-md">Teste</button>
+        <ul>
+          <li>Joao</li>
+          <li>Ana</li>
+          <li>Lili</li>
+        </ul>
       </Conteudo>
       
       <Rodape textoEsquerdo='Criado com ❤️ por: Miquéias Mesquita' textoDireito={`Desenvolvido em ${new Date().getFullYear()}`}/>
