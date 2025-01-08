@@ -9,7 +9,11 @@ export default function Pagina(props: any) {
     <div className='flex h-screen p-5 gap-4'>
       <Menu/>
       <div className='flex flex-col flex-1 gap-4'>
-        <Cabecalho titulo={props.titulo} subtitulo={props.subTitulo}/>
+        <Cabecalho 
+        titulo={props.titulo} 
+        subtitulo={props.subTitulo}
+        className='h-24'
+        />
           
         <Conteudo>
           {props.children}
