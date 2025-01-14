@@ -1,26 +1,30 @@
+import AreaLateral from './AreaLateral'
+import Cabecalho from './Cabecalho'
+import Conteudo from './Conteudo'
+import Rodape from './Rodape'
 
-import Cabecalho from "@/components/Cabecalho";
-import Conteudo from "@/components/Conteudo";
-import Menu from '@/components/menu';
-import Rodape from "@/components/Rodape";
+interface PaginaProps {
+  titulo: string
+  subtitulo: string
+  children: any
+}
 
-export default function Pagina(props: any) {
+export default function Pagina(props: PaginaProps) {
   return (
-    <div className='flex h-screen p-5 gap-4'>
-      <Menu/>
-      <div className='flex flex-col flex-1 gap-4'>
-        <Cabecalho 
-        titulo={props.titulo} 
-        subtitulo={props.subTitulo}
-        className='h-24'
-        />
-          
-        <Conteudo>
-          {props.children}
-        </Conteudo>
-
-        <Rodape textoEsquerdo='Criado com ❤️ por: Miquéias Mesquita' textoDireito={`Desenvolvido em ${new Date().getFullYear()}`}/>
+      <div className="flex h-screen">
+          <AreaLateral />
+          <div className="flex flex-col flex-1">
+              <Cabecalho 
+                  titulo={props.titulo}
+                  subtitulo={props.subtitulo}
+                  className="h-16 bg-zinc-800"
+              />
+              <Conteudo>{props.children}</Conteudo>
+              <Rodape
+                  textoEsquerdo="Feito com ❤️ por Miquéias Mesquita"
+                  textoDireito={`Desenvolvido em ${new Date().getFullYear()}`}
+              />
+          </div>
       </div>
-    </div>
   )
 }

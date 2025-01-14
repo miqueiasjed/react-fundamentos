@@ -1,13 +1,16 @@
+import { IconBraces, IconCode } from "@tabler/icons-react";
 import MenuItem from "./menuItem";
 
 export default function Menu() {
   return (
     <div className={`
-      flex flex-col justify-start items-center w-52
-      bg-zinc-700 rounded-lg text-3xl p-2
+      flex flex-col justify-start w-72
+      text-3xl p-2 gap-2
     `}>
-        <MenuItem texto='Página 1' url="/fundamentos/pagina"/>
-        <MenuItem texto='Página 2' url="/pagina"/>
+        <MenuItem icon={<IconCode />} texto='Basico' url="/components/basico"/>
+        <MenuItem icon={<IconCode />} texto='Título' url="/components/titulo"/>
+        <MenuItem icon={<IconCode />} texto='Página 1' url="/fundamentos/pagina"/>
+        <MenuItem icon={<IconBraces />} texto='Página 2' url="/pagina"/>
     </div>
   )
 }
