@@ -8,7 +8,7 @@ export default function Menu() {
       text-3xl p-2 gap-2
     `}>
         <span className="text-sm text-zinc-500 pl-3 pt-4">Estado</span>
-        <MenuItem icon={<IconCode />} texto='Componente sem estado' url="/"/>
+        <MenuItem icon={<IconCode />} texto='Componente sem estado' url="/estado/sem"/>
 
         <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentos</span>
         <MenuItem icon={<IconBraces />} texto='JSX com JS' url="/fundamentos/soma"/>
