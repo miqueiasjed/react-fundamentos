@@ -1,4 +1,4 @@
-import { IconBraces, IconCode, IconFileCheck, IconFunction, IconH1, IconNumbers, IconSitemap } from "@tabler/icons-react";
+import { IconBraces, IconCalculator, IconCode, IconFileCheck, IconForms, IconFunction, IconH1, IconNumbers, IconSitemap } from "@tabler/icons-react";
 import MenuItem from "./menuItem";
 
 export default function Menu() {
@@ -11,6 +11,8 @@ export default function Menu() {
         <MenuItem icon={<IconCode />} texto='Componente sem estado' url="/estado/sem"/>
         <MenuItem icon={<IconCode />} texto='Componente com estado' url="/estado/com"/>
         <MenuItem icon={<IconNumbers />} texto='Contador' url="/estado/contador"/>
+        <MenuItem icon={<IconForms />} texto="Campo de Texto" url="/estado/campoTexto" />
+        <MenuItem icon={<IconCalculator />} texto="Calculdaora" url="/estado/calculadora" />
 
         <span className="text-sm text-zinc-500 pl-3 pt-4">Fundamentos</span>
         <MenuItem icon={<IconBraces />} texto='JSX com JS' url="/fundamentos/soma"/>

@@ -6,7 +6,7 @@ export default function Conteudo(props: ConteudoProps) {
   return (
     <div className={`
       flex items-start flex-1 p-4
-    bg-zinc-900 text-3xl
+    bg-zinc-900 text-3xl text-white
     `}>
       {props.children}
     </div>

@@ -1,5 +1,4 @@
 import Pagina from '@/components/Pagina'
-import '../app/globals.css'
 
 export default function TestPagina() {
 
@@ -11,7 +10,7 @@ export default function TestPagina() {
     <Pagina titulo='Minha Página' subTitulo='Estou na Pagas Pages'>
       <button 
         onClick={executar}
-        className='bg-blue-500 p-2 rounded-md'>
+        className='botao'>
         Teste
       </button>
     </Pagina>
